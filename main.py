@@ -11,8 +11,8 @@ st.set_page_config(
 st.title("Emmanuel Nyasha Nyikadzanza's Profile")
 
 st.write("""
-**Name:** Emmanuel Nyasha Nyikadzanza
-**Level:** 2.2
+**Name:** Emmanuel Nyasha Nyikadzanza\n
+**Level:** 2.2\n
 **Study:** Bachelor of Commerce Honours in Information Systems
 """)
 st.header("Skills")
