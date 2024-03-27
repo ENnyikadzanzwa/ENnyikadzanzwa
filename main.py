@@ -1,46 +1,54 @@
 import streamlit as st
+import pandas as pd
+
 st.set_page_config(
-    page_title="Digital Resume",
+    page_title="Emmanuel nyikadzanzwa",
     page_icon="mylog.png",
     layout="centered",
     initial_sidebar_state="expanded",
     
     )
-col1,col2 = st.columns(2)
-with col1:
-    st.image("mylog.png")
-with col2:
-    st.header(":green[Emmanuel Nyasha Nyikadzanzwa]")
-    st.markdown(">email nyikadzanzwaemmanuelnyasha@gmail.com")
+st.title("Emmanuel Nyasha Nyikadzanza's Profile")
 
-    col,co,c3 = st.columns(3)
-    with col:
-        st.markdown("> :orange[facebook]")
-    with co:
-        st.markdown("> :green[whatsapp]")
-    with c3:
-        st.markdown("> :orange[github]")
+st.write("""
+**Name:** Emmanuel Nyasha Nyikadzanza
+**Level:** 2.2
+**Study:** Bachelor of Commerce Honours in Information Systems
+""")
+st.header("Skills")
+skills = ["Python", "Django", "Data Analysis", "Machine Learning", "Web Development"]
+for skill in skills:
+    st.write(skill)
+st.header("Projects")
+projects = [
+    {
+        "name": "Project 1",
+        "description": "A brief description of Project 1.",
+        "link": "https://example.com/project1"
+    },
+    {
+        "name": "Project 2",
+        "description": "A brief description of Project 2.",
+        "link": "https://example.com/project2"
+    }
+]
 
-st.subheader(":green[Junior Software Developer]")
-st.markdown("---")
-st.subheader("About")
-st.info(""" -This example includes three HTML pages (index.html, products.html, contact.html),
-         -a CSS file (styles.css) for styling, and an empty JavaScript file (script.js) 
-        - for potential additional functionality. 
-         -The navigation bar at the bottom of each page allows users to navigate between
-          - the home page, products page, and contact page. Products are displayed in categories
-         -vertically aligned on the products page. """)
-st.subheader("Skills")
-st.info(""" -This example includes three HTML pages (index.html, products.html, contact.html),
-         -a CSS file (styles.css) for styling, and an empty JavaScript file (script.js) 
-        - for potential additional functionality. 
-         -The navigation bar at the bottom of each page allows users to navigate between
-          - the home page, products page, and contact page. Products are displayed in categories
-         -vertically aligned on the products page. """)
-st.subheader("Projects")
-st.info(""" -This example includes three HTML pages (index.html, products.html, contact.html),
-         -a CSS file (styles.css) for styling, and an empty JavaScript file (script.js) 
-        - for potential additional functionality. 
-         -The navigation bar at the bottom of each page allows users to navigate between
-          - the home page, products page, and contact page. Products are displayed in categories
-         -vertically aligned on the products page. """)
+for project in projects:
+    st.write(f"**{project['name']}**")
+    st.write(project['description'])
+    st.write(f"[View Project]({project['link']})")
+
+
+st.header("Contact Me")
+
+name = st.text_input("Your Name")
+email = st.text_input("Your Email")
+message = st.text_area("Your Message")
+
+if st.button("Send"):
+    st.write(f"Thank you {name}, your message has been sent!")
+st.header("Download Emmanuel's CV")
+cv_url = "https://example.com/emmanuel_cv.pdf"
+st.markdown(f"[Download CV]({cv_url})")
+
+
