@@ -18,7 +18,7 @@ st.info("""
 st.header("Skills")
 skills = ["Python", "Django", "Data Analysis", "Machine Learning", "Web Development"]
 for skill in skills:
-    st.write(skill)
+    st.info(skill)
 st.header("Projects")
 projects = [
     {
@@ -34,9 +34,8 @@ projects = [
 ]
 
 for project in projects:
-    st.write(f"**{project['name']}**")
-    st.write(project['description'])
-    st.write(f"[View Project]({project['link']})")
+    st.info(f"**{project['name']}**\n project['description'] \n [View Project]({project['link']})")
+    
 
 
 st.header("Contact Me")
