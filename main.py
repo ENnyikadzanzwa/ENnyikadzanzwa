@@ -35,7 +35,7 @@ projects = [
 
 for project in projects:
     st.info(f"""**{project['name']}** \n 
-    project{['description']} \n 
+    {project['description']} \n 
     [View Project]({project['link']})""")
     
 
