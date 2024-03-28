@@ -9,7 +9,7 @@ st.set_page_config(
     
     )
 st.title("Emmanuel Nyasha Nyikadzanza's Profile")
-st.image("profile.jpg")
+st.image("mylog.png")
 col1,col2 = st.columns(2)
 with col1:
     st.info("""
