@@ -18,18 +18,18 @@ with col1:
     **Name:** Emmanuel Nyasha Nyikadzanza\n
     **Level:** 2.2\n
     **Study:** Bachelor of Commerce Honours in Information Systems\n
-    **Sex :**Male\n
-    **D.O.B:**29 November 2002\n
-    **Marital status:**Single\n
+    **Sex :** Male\n
+    **D.O.B:**  29 November 2002\n
+    **Marital status:** Single\n
     """)
 with col2:
     
     st.header("What I do")
-    st.info("""I am creating various websites for personal and organization who:
-                >	Are looking for a power to leverage the power of data analytics in their day today businesses
-                >	Are working with excel found themselves- “there has to be a better way.”
-                >	Are struggling in accounting and manipulation of their data and looking for better solutions to overcome this
-                >	Want to record and analyze their business performance in a much convenient way
+    st.info("""I am developing websites for both individuals and organizations that:\n
+        - Seek to harness the capabilities of data analytics in their everyday operations.\n
+        - Have encountered limitations with Excel and are seeking more efficient alternatives.\n
+        - Face challenges in accounting and data manipulation, in search of improved solutions.\n
+        - Desire a more convenient method for tracking and evaluating their business performance.
 """)
 st.header("Skills")
 skills = ["Python", "Django", "Data Analysis", "Machine Learning", "Web Development"]
