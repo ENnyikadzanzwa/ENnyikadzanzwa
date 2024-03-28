@@ -63,19 +63,30 @@ with col2:
     skills = ["Fundamentals of cybersecurity", "Networking", "APIs", "Web Development"]
     for skill in skills:
         st.info(skill)
-st.header("Skills")
+
 
 st.header("Projects")
 projects = [
     {
-        "name": "Project 1",
-        "description": "A brief description of Project 1.",
-        "link": "https://example.com/project1"
+        "name": "Online electricity scheduling ssystem",
+        "description": """The online electricity scheduling system project built on Streamlit aims to provide a user-friendly platform for managing and scheduling electricity usage. This system allows users to view real-time electricity consumption data, schedule power usage for different appliances, and optimize energy usage to reduce costs and environmental impact. The interface is designed to be intuitive and easy to navigate, allowing users to monitor their electricity usage patterns and make informed decisions about their energy consumption. Additionally, the system may include features such as predictive analytics to forecast energy demand, integration with smart home devices for automated scheduling, and customizable reporting for tracking usage trends. Overall, 
+        the project aims to streamline electricity management for both residential and commercial users, promoting efficient and sustainable energy practices.""",
+        "link": "https://onlineelectricityschedulingsystem.streamlit.app/"
     },
     {
-        "name": "Project 2",
+        "name": "Writing agent",
+        "description": "A brief description of Project 2.",
+        "link": "https://writing-agent-pbvdnbrsjsn6b6oxggn8by.streamlit.app/"
+    },
+    {
+        "name": "Toy Store",
         "description": "A brief description of Project 2.",
         "link": "https://example.com/project2"
+    },
+    {
+        "name": "Marketing Ad generator",
+        "description": "A brief description of Project 2.",
+        "link": "https://marketing-ad-generator-ksce6pgbarzkfz9xpbhtsx.streamlit.app/"
     }
 ]
 
