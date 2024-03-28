@@ -10,11 +10,13 @@ st.set_page_config(
     )
 st.title("Emmanuel Nyasha Nyikadzanza's Profile")
 
-st.info("""
-**Name:** Emmanuel Nyasha Nyikadzanza\n
-**Level:** 2.2\n
-**Study:** Bachelor of Commerce Honours in Information Systems
-""")
+col1,col2 = st.columns(2)
+with col1:
+    st.info("""
+    **Name:** Emmanuel Nyasha Nyikadzanza\n
+    **Level:** 2.2\n
+    **Study:** Bachelor of Commerce Honours in Information Systems
+    """)
 st.header("Skills")
 skills = ["Python", "Django", "Data Analysis", "Machine Learning", "Web Development"]
 for skill in skills:
