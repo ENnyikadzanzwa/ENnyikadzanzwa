@@ -24,10 +24,10 @@ st.markdown(
 )
 
 # Display the image centered
-st.image("                                        -mylog.png")
+
 
 # Display the title centered
-st.markdown("<h1 style='text-align: center; color: black;'>Software Developer</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: blue;'>Software Developer</h1>", unsafe_allow_html=True)
 
 col1,col2 = st.columns(2)
 with col1:
@@ -41,7 +41,7 @@ with col1:
     **Marital status:** Single\n
     """)
 with col2:
-    
+    st.image("mylog.png")
     st.header("What I do")
     st.info("""I am developing websites for both individuals and organizations that:\n
         - Seek to harness the capabilities of data analytics in their everyday operations.\n
