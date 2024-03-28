@@ -17,6 +17,9 @@ with col1:
     **Level:** 2.2\n
     **Study:** Bachelor of Commerce Honours in Information Systems
     """)
+with col2:
+    st.write("What I do")
+    st.info()
 st.header("Skills")
 skills = ["Python", "Django", "Data Analysis", "Machine Learning", "Web Development"]
 for skill in skills:
