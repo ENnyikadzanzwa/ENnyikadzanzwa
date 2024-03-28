@@ -8,16 +8,18 @@ st.set_page_config(
     initial_sidebar_state="expanded",
     
     )
-st.title("Emmanuel Nyasha Nyikadzanza's Profile")
-st.image("mylog.png")
+
+
 col1,col2 = st.columns(2)
 with col1:
+    st.image("mylog.png")
     st.info("""
     **Name:** Emmanuel Nyasha Nyikadzanza\n
     **Level:** 2.2\n
     **Study:** Bachelor of Commerce Honours in Information Systems
     """)
 with col2:
+    st.title("Emmanuel Nyasha Nyikadzanza's Profile")
     st.header("What I do")
     st.info("looking at ")
 st.header("Skills")
