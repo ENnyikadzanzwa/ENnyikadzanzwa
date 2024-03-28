@@ -18,8 +18,8 @@ with col1:
     **Study:** Bachelor of Commerce Honours in Information Systems
     """)
 with col2:
-    st.write("What I do")
-    st.info()
+    st.header("What I do")
+    st.info("looking at ")
 st.header("Skills")
 skills = ["Python", "Django", "Data Analysis", "Machine Learning", "Web Development"]
 for skill in skills:
