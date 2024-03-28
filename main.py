@@ -44,6 +44,12 @@ with col1:
     **D.O.B:**  29 November 2002\n
     **Marital status:** Single\n
     """)
+    st.header(" Hard Skills")
+    skills = ["""Programming languages\n
+              Python C#\n
+              """, "Web development\nDJango,Streamlit", "Data Analysis\n Pandas,Plotly", "AI and ML\nLarge language models", "Web Design\nHTML,CSS AND JAVASCRIPT","Database systems\nMysql",]
+    for skill in skills:
+        st.info(skill)
 with col2:
     
     st.header("What I do")
@@ -52,11 +58,13 @@ with col2:
         - Have encountered limitations with Excel and are seeking more efficient alternatives.\n
         - Face challenges in accounting and data manipulation, in search of improved solutions.\n
         - Desire a more convenient method for tracking and evaluating their business performance.
-""")
+    """)
+    st.header("Other Skills")
+    skills = ["Fundamentals of cybersecurity", "Networking", "APIs", "Web Development"]
+    for skill in skills:
+        st.info(skill)
 st.header("Skills")
-skills = ["Python", "Django", "Data Analysis", "Machine Learning", "Web Development"]
-for skill in skills:
-    st.info(skill)
+
 st.header("Projects")
 projects = [
     {
