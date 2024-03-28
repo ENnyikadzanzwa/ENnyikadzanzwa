@@ -24,7 +24,7 @@ st.markdown(
 )
 
 # Display the image centered
-st.image("mylog.png")
+st.image("                                        -mylog.png")
 
 # Display the title centered
 st.markdown("<h1 style='text-align: center; color: black;'>Software Developer</h1>", unsafe_allow_html=True)
