@@ -9,8 +9,26 @@ st.set_page_config(
     
     )
 
+# Center the image
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Display the image centered
 st.image("mylog.png")
-st.title("Software Developer")
+
+# Display the title centered
+st.markdown("<h1 style='text-align: center; color: black;'>Software Developer</h1>", unsafe_allow_html=True)
+
 col1,col2 = st.columns(2)
 with col1:
     st.header("Bio")
