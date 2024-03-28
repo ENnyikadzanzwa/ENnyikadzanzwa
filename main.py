@@ -13,16 +13,24 @@ st.image("mylog.png")
 st.title("Software Developer")
 col1,col2 = st.columns(2)
 with col1:
-    
+    st.header("Bio")
     st.info("""
     **Name:** Emmanuel Nyasha Nyikadzanza\n
     **Level:** 2.2\n
-    **Study:** Bachelor of Commerce Honours in Information Systems
+    **Study:** Bachelor of Commerce Honours in Information Systems\n
+    **Sex :**Male\n
+    **D.O.B:**29 November 2002\n
+    **Marital status:**Single\n
     """)
 with col2:
     
     st.header("What I do")
-    st.info("looking at ")
+    st.info("""I am creating various websites for personal and organization who:
+                >	Are looking for a power to leverage the power of data analytics in their day today businesses
+                >	Are working with excel found themselves- “there has to be a better way.”
+                >	Are struggling in accounting and manipulation of their data and looking for better solutions to overcome this
+                >	Want to record and analyze their business performance in a much convenient way
+""")
 st.header("Skills")
 skills = ["Python", "Django", "Data Analysis", "Machine Learning", "Web Development"]
 for skill in skills:
