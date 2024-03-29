@@ -62,9 +62,9 @@ with col1:
     st.header(" Hard Skills")
     skills = ["""Programming languages\n
               Python C#\n
-              """, """Web development \n DJango,Streamlit""", """Data Analysis\n
-              Pandas,Plotly,Excel""", """Web Design\n
-              HTML,CSS AND JAVASCRIPT""",
+              """, """Web development \n 
+              DJango,Streamlit""", """Data Analysis\n
+              Pandas,Plotly,Excel""",
               """Database systems\n
               Mysql""",]
     for skill in skills:
@@ -80,7 +80,8 @@ with col2:
     """)
     st.header("Other Skills")
     skills = ["Fundamentals of cybersecurity", """Artificial Intelligence \n
-    Large language models,Fine tuning""", "APIs"]
+    Large language models,Fine tuning""", """Web Design\n
+              HTML,CSS AND JAVASCRIPT""","APIs"]
     for skill in skills:
         st.info(skill)
 
@@ -111,9 +112,10 @@ projects = [
 ]
 
 for project in projects:
-    st.write(f"""**{project['name']}** \n 
-    {project['description']} \n 
-    **({project['link']})**""")
+    st.write(f"**{project['name']}** ")
+    st.write(f"{project['description']}") 
+    st.write(f"{project["link"]}")
+   
     
 
 
