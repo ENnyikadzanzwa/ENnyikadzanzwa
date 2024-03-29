@@ -81,7 +81,8 @@ with col2:
     st.header("Other Skills")
     skills = ["Fundamentals of cybersecurity", """Artificial Intelligence \n
     Large language models,Fine tuning""", """Web Design\n
-              HTML,CSS AND JAVASCRIPT""","APIs"]
+              HTML,CSS AND JAVASCRIPT""","APIs","""Operating Systems\n
+              linux and windows""","Microsoft Office Suite"]
     for skill in skills:
         st.info(skill)
 
