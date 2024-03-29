@@ -120,7 +120,7 @@ message = st.text_area("Your Message")
 if st.button("Send"):
     st.write(f"Thank you {name}, your message has been sent!")
 
-if st.button('Download Emmanuel's CV'):
+if st.button("Download Emmanuel's CV"):
     download_pdf(pdf_binary_data, file_path)
 
 
