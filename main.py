@@ -96,17 +96,17 @@ projects = [
     },
     {
         "name": "Writing agent",
-        "description": "A brief description of Project 2.",
+        "description": "I have developed an AI Streamlit app that serves as a writing agent capable of generating various types of text such as emails, poems, and songs. The app uses natural language processing and machine learning techniques to understand user input and generate relevant and creative content. With this tool, users can easily create personalized and engaging written material for different purposes.",
         "link": "https://writing-agent-pbvdnbrsjsn6b6oxggn8by.streamlit.app/"
     },
     {
         "name": "Toy Store",
-        "description": "A brief description of Project 2.",
+        "description": "This ecommerce website is built using HTML, CSS, and JavaScript. It allows users to browse a selection of toys and add them to their personal catalogue. Users can easily navigate through the website, select the toys they are interested in, and add them to their collection for purchase. The website provides a user-friendly experience for toy enthusiasts to explore and shop for their favorite items.",
         "link": "https://example.com/project2"
     },
     {
         "name": "Marketing Ad generator",
-        "description": "A brief description of Project 2.",
+        "description": "Are you looking for an easy way to create marketing ads for your business? Look no further! With my AI Streamlit app, you can generate customized marketing ads by simply entering your business name, location, and type of business. Whether you're a small local shop or a large corporation, our app can help you create compelling ads to reach your target audience. Try it out today and take your marketing to the next level!",
         "link": "https://marketing-ad-generator-ksce6pgbarzkfz9xpbhtsx.streamlit.app/"
     }
 ]
