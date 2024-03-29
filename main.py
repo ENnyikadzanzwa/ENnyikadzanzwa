@@ -1,5 +1,19 @@
 import streamlit as st
 import pandas as pd
+import base64
+
+file_path = 'NyashaCV.pdf'
+
+def get_binary_data(file_path):
+    with open(file_path, 'rb') as file:
+        data = file.read()
+    return data
+
+def download_pdf(binary_data, file_name):
+    b64 = base64.b64encode(binary_data).decode('utf-8')
+    href = f'<a href="data:application/octet-stream;base64,{b64}" download="{file_name}">Download PDF</a>'
+    st.markdown(href, unsafe_allow_html=True)
+pdf_binary_data = get_binary_data(file_path)
 
 st.set_page_config(
     page_title="Emmanuel nyikadzanzwa",
@@ -105,8 +119,8 @@ message = st.text_area("Your Message")
 
 if st.button("Send"):
     st.write(f"Thank you {name}, your message has been sent!")
-st.header("Download Emmanuel's CV")
-cv_url = "https://example.com/emmanuel_cv.pdf"
-st.markdown(f"[Download CV]({cv_url})")
+
+if st.button('Download Emmanuel's CV'):
+    download_pdf(pdf_binary_data, file_path)
 
 
