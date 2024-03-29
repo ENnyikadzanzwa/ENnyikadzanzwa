@@ -103,7 +103,7 @@ projects = [
     {
         "name": "Toy Store",
         "description": "This ecommerce website is built using HTML, CSS, and JavaScript. It allows users to browse a selection of toys and add them to their personal catalogue. Users can easily navigate through the website, select the toys they are interested in, and add them to their collection for purchase. The website provides a user-friendly experience for toy enthusiasts to explore and shop for their favorite items.",
-        "link": "https://example.com/project2"
+        "link": "https://idyllic-lamington-008d51.netlify.app/"
     },
     {
         "name": "Marketing Ad generator",
