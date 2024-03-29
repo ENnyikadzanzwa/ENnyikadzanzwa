@@ -111,23 +111,29 @@ projects = [
         "link": "https://marketing-ad-generator-ksce6pgbarzkfz9xpbhtsx.streamlit.app/"
     }
 ]
-
-for project in projects:
-    st.write(f"**{project['name']}** ")
-    st.write(f"{project['description']}") 
-    st.write(f"{project['link']}")
+with st.container():
+    for project in projects:
+        st.write(f"**{project['name']}** ")
+        st.write(f"{project['description']}") 
+        st.write(f"{project['link']}")
    
     
 
-
-st.header("Contact Me")
-
-name = st.text_input("Your Name")
-email = st.text_input("Your Email")
-message = st.text_area("Your Message")
-
-if st.button("Send"):
-    st.write(f"Thank you {name}, your message has been sent!")
+with st.container():
+    st.header("Get in touch with me")
+    st.write("##")
+    contact_form ="""<form action="https://formsubmit.co/nyikadzanzwaemmanuelnyasha@gmail.com" method="POST">
+    <input type="hidden" name = "_captcha" value ="falsse">
+     <input type="text" name="name" placeholder = "Your name" required>
+     <input type="email" name="email" placeholder ="Your email" required>
+      <textarea name="message" placeholder="Your message" required>/textarea>
+     <button type="submit">Send</button>
+    </form>"""
+    left,right = st.columns(2)
+    with left:
+        st.markdown(contact_form,unsafe_allow_html = True)
+    with right:
+        st.
 
 
 
