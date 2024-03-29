@@ -41,9 +41,10 @@ st.markdown(
 
 a,b = st.columns(2)
 with a:
-    st.write("   ")
+   st.image("mylog.png")
 with b:
-    st.image("mylog.png")
+    if st.button("Download Emmanuel's CV"):
+        download_pdf(pdf_binary_data, file_path)
 # Display the title centered
 st.markdown("<h1 style='text-align: center; color: blue;'>Software Developer</h1>", unsafe_allow_html=True)
 
@@ -61,7 +62,11 @@ with col1:
     st.header(" Hard Skills")
     skills = ["""Programming languages\n
               Python C#\n
-              """, "Web development\nDJango,Streamlit", "Data Analysis\n Pandas,Plotly", "AI and ML\nLarge language models", "Web Design\nHTML,CSS AND JAVASCRIPT","Database systems\nMysql",]
+              """, """Web development \n DJango,Streamlit""", """Data Analysis\n
+              Pandas,Plotly,Excel""", """Web Design\n
+              HTML,CSS AND JAVASCRIPT""",
+              """Database systems\n
+              Mysql""",]
     for skill in skills:
         st.info(skill)
 with col2:
@@ -74,7 +79,8 @@ with col2:
         - Desire a more convenient method for tracking and evaluating their business performance.
     """)
     st.header("Other Skills")
-    skills = ["Fundamentals of cybersecurity", "Networking", "APIs", "Web Development"]
+    skills = ["Fundamentals of cybersecurity", """Artificial Intelligence \n
+    Large language models,Fine tuning""", "APIs"]
     for skill in skills:
         st.info(skill)
 
@@ -105,9 +111,9 @@ projects = [
 ]
 
 for project in projects:
-    st.info(f"""**{project['name']}** \n 
+    st.write(f"""**{project['name']}** \n 
     {project['description']} \n 
-    [View Project]({project['link']})""")
+    **({project['link']})**""")
     
 
 
@@ -120,7 +126,6 @@ message = st.text_area("Your Message")
 if st.button("Send"):
     st.write(f"Thank you {name}, your message has been sent!")
 
-if st.button("Download Emmanuel's CV"):
-    download_pdf(pdf_binary_data, file_path)
+
 
 
