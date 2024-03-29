@@ -133,7 +133,7 @@ with st.container():
     with left:
         st.markdown(contact_form,unsafe_allow_html = True)
     with right:
-        st.
+        st.empty()
 
 
 
