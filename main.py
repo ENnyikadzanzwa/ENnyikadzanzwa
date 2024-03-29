@@ -114,7 +114,7 @@ projects = [
 for project in projects:
     st.write(f"**{project['name']}** ")
     st.write(f"{project['description']}") 
-    st.write(f"{project["link"]}")
+    st.write(f"{project['link']}")
    
     
 
